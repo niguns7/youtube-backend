@@ -1,0 +1,9 @@
+services:
+  server:
+    container_name: "Backend"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8000:8000"
